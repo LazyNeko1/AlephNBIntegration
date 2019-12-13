@@ -1,3 +1,5 @@
+#Discord Bot Integration hosted by NekoBot
+
 import aiohttp, asyncio, nbapi
 import nbutil_ao as nb
 
@@ -34,6 +36,6 @@ class NekoBotInt():
             nb.HTTP.get()
 
 
-class BOT(commands.Cog):
+class BOT_out(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
