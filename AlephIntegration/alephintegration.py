@@ -1,5 +1,5 @@
 import aiohttp, asyncio, nbapi
-import nbutil as nb
+import nbutil_ao as nb
 
 from discord.ext import commands
 
