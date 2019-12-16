@@ -4,8 +4,13 @@ import aiohttp, asyncio, nbapi
 import nbutil_ao as nb
 
 from discord.ext import commands
+#Variable Assignment for UTILS module under NekoBotInt()
+
+
 
 class NekoBotInt():
+    nekobot_fullname = "Neko-Bot-Cheliese"
+    nekobot_age = "11"
     class info():
         def __init__(self):
             self.nekobot_fullname = "Neko-Bot-Cheliese"
