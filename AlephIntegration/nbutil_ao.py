@@ -6,9 +6,16 @@ import aiohttp
 #Main File
 import nekoBot_alephintegration as nb
 
+class NekoBot():
+    Fname="Neko"
+    Mname="Bot"
+    Lname="Cheliese"
+    Fullname=f"{Fname} {Mname} {Lname}"
+    def __init__(self):
+        self.Fullname=Fullname
+        
+
 class HTTP():
-    BotFullname = nb.NekoBotInt.fullname
-    BotAge = nb.NekoBotInt.age
     osNam = os.name
     osSys = os.system
     def __init__(self, headers, url, timeFrame=0):
