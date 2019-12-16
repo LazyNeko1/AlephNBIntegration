@@ -3,8 +3,12 @@
 import os
 import aiohttp
 
+#Main File
+import nekoBot_alephintegration as nb
 
 class HTTP():
+    BotFullname = nb.NekoBotInt.fullname
+    BotAge = nb.NekoBotInt.age
     osNam = os.name
     osSys = os.system
     def __init__(self, headers, url, timeFrame=0):
