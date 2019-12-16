@@ -9,7 +9,7 @@ import nekoBot_alephintegration as nb
 class NekoBot():
     Fname="Neko"
     Mname="Bot"
-    Lname="Cheliese"
+    Lname="Chliese"
     Fullname=f"{Fname} {Mname} {Lname}"
     def __init__(self):
         self.Fullname=Fullname
