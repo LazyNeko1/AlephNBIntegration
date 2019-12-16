@@ -32,6 +32,7 @@ class HTTP():
             if self.UUID is 0 or None:
                 return f"Could not get User Info from ID {self.UUID}"
             if self.UUID is not 0 or None:
-                
+                OUT = None
+                return OUT
         def UserStats_FROMNAME(self):
             pass
