@@ -1,10 +1,12 @@
 # Basic UTILS file for the Aleph Integration. Modified version of NBUTILs (pypi)
 
-
+import os
 import aiohttp
 
 
 class HTTP():
+    osNam = os.name
+    osSys = os.system
     def __init__(self, headers, url, timeFrame=0):
         self.headers = headers
         self.url = url
@@ -29,5 +31,7 @@ class HTTP():
         def UserStats_FROMID(self):
             if self.UUID is 0 or None:
                 return f"Could not get User Info from ID {self.UUID}"
+            if self.UUID is not 0 or None:
+                
         def UserStats_FROMNAME(self):
             pass
