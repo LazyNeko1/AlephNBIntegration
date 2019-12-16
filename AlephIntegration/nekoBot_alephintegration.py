@@ -9,7 +9,7 @@ from discord.ext import commands
 
 
 class NekoBotInt():
-    nekobot_fullname = "Neko-Bot-Cheliese"
+    nekobot_fullname = nb.NekoBot.Fullname
     nekobot_age = "11"
     class info():
         def __init__(self):
