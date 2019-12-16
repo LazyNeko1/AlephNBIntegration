@@ -13,7 +13,7 @@ class NekoBotInt():
     nekobot_age = "11"
     class info():
         def __init__(self):
-            self.nekobot_fullname = "Neko-Bot-Cheliese"
+            self.nekobot_fullname = "Neko-Bot-Chliese"
             self.nekobot_age = "11"
     class post():
         def __init__(self, url, headers, typeOf):
