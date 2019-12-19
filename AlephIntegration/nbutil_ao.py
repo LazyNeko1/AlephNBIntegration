@@ -9,23 +9,36 @@ import nekoBot_alephintegration as main
 
 class aleph:
     BaseUrl = "http://aleph.neko-bot.net"
-    quest1 = main.toNb.stringOut_Quest1
+    quest1 = main.toUtil.stringOut_Quest1
 
     def __init__(self):
         self.GetAddress = None
         self.quest1 = aleph.quest1
-        self.firstname = NekoBot.Fname # Default name (when asked)
-        self.lastname = NekoBot.Lname # DO NOT USE WHEN TALKING, only for any sort of dialog box.
-        self.fullname = NekoBot.Fullname # please for the love of god don't use this one hehe
-    def NPCoutput(self,context,playername="Neko",extras=None):
-        context=context.lower()
-        if context.startswith("Helllo"):pass
+        try:
+            self.firstname = NekoBot.Fname  # Default name (when asked)
+            self.lastname = NekoBot.Lname  # DO NOT USE WHEN TALKING, only for any sort of dialog box.
+            self.fullname = NekoBot.Fullname  # please for the love of god don't use this one heh
+        except NameError:
+            self.firstname = None
+            self.lastname = None
+            self.fullname = None
+
+    def NPCoutput(self, context, playername="Neko", extras=None):
+        args = extras.lower()
+        context = context.lower()
+        if context.startswith("Hello"):
+            if playername is "Neko":
+                return "Wait... You have the same name as me? Cool!"
+            if playername is "LazyNeko":
+                return "Hello, How are you doing, Mother?"
+            elif playername is not "LazyNeko" or "Neko":
+                return "Hello, how can I help you?"
 
 
 class NekoBot:
-    Fname = "Neko"
-    Mname = "Bot"
-    Lname = "Chliese"
+    Fname = "Neko"  # First Name
+    Mname = "Bot"  # Middle Name
+    Lname = "Chliese"  # Last Name
     Fullname = f"{Fname} {Mname} {Lname}"
     age = 11
 
