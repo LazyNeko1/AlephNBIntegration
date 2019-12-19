@@ -9,7 +9,7 @@ import nbutil_ao as nb
 
 
 # Variable Assignment for UTILS module under NekoBotInt()
-class toNb:
+class toUtil:
     stringOut_Quest1 = None
 
     def __init__(self):
